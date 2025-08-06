@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="style.css">
+    <title>Random User</title>
+</head>
+<body>
+    <div class="selection">
+        <nav class="sidebar">
+            <ul class="select-section">
+                <li>  
+                    <button id ="gender" class="menu-toggle">Gender</button>
+                        <ul class="menu"></ul>
+                </li>
+                <li>  
+                    <button id="name"  class="menu-toggle">Name</button>
+                        <ul class="menu"></ul>
+                </li>
+                <li>  
+                    <button id="country"  class="menu-toggle">Country</button>
+                        <ul class="menu"></ul>
+                </li>
+                <li>  
+                    <button id="age"  class="menu-toggle">Age</button>
+                        <ul class="menu"></ul>
+                </li>
+          
+                
+            </ul>
+        </nav>
+    </div>
+    <div class="generate">
+        <button onclick="generateRandomUser()" class="generate-button">Generate Random User</button>
+        <div class="user-container">
+            <div class="user-details">
+                <h2 class="name"></h2>
+                
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
