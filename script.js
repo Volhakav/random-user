@@ -24,6 +24,7 @@ function displayUser(user) {
 
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('gender').addEventListener('click', () => {
+        if (!currentUser) return;
         const menu = document.querySelector('#gender + .menu');
         if (menu.innerHTML) {
              menu.innerHTML = ''; 
