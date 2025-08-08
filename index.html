@@ -9,34 +9,54 @@
 <body>
     <div class="selection">
         <nav class="sidebar">
-            <ul class="select-section">
-                <li>  
-                    <button id ="gender" class="menu-toggle">Gender</button>
-                        <ul class="menu"></ul>
+            <h1>Select filters</h1>
+            <ul class="checkbox">
+                <li>
+                    <input type="checkbox" id="first-name" class="menu-toggle" data-menu="first-name">
+                    <label for="first-name">First Name</label>
                 </li>
-                <li>  
-                    <button id="name"  class="menu-toggle">Name</button>
-                        <ul class="menu"></ul>
+                <li>
+                    <input type="checkbox" id="last-name" class="menu-toggle" data-menu="last-name">
+                    <label for="last-name">Last Name</label>
                 </li>
-                <li>  
-                    <button id="country"  class="menu-toggle">Country</button>
-                        <ul class="menu"></ul>
+                <li>
+                    <input type="checkbox" id="picture" class="menu-toggle" data-menu="picture">
+                    <label for="picture">Picture</label>
                 </li>
-                <li>  
-                    <button id="age"  class="menu-toggle">Age</button>
-                        <ul class="menu"></ul>
+                <li>
+                    <input type="checkbox" id="country" class="menu-toggle" data-menu="country">
+                    <label for="country">Country</label>
                 </li>
-          
-                
+                <li>
+                    <input type="checkbox" id="city" class="menu-toggle" data-menu="city">
+                    <label for="city">City</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="street" class="menu-toggle" data-menu="street">
+                    <label for="street">Street</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="e-mail" class="menu-toggle" data-menu="e-mail">
+                    <label for="e-mail">Email</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="age" class="menu-toggle" data-menu="age">
+                    <label for="age">Age</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="phone" class="menu-toggle" data-menu="phone">
+                    <label for="phone">Phone</label>
+                </li>
             </ul>
         </nav>
     </div>
     <div class="generate">
-        <button onclick="generateRandomUser()" class="generate-button">Generate Random User</button>
+        <button type="button" class="generate-button">Generate Random User</button>
         <div class="user-container">
             <div class="user-details">
                 <h2 class="name"></h2>
-                
+            </div>
+        </div>                    
     </div>
     <script src="script.js"></script>
 </body>
